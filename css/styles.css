@@ -31,3 +31,13 @@
     margin: 20px 15px;
 }
 
+/* 준비중입니다 */
+.main {
+    background-color: #4E61C0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
