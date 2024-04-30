@@ -1,0 +1,71 @@
+/* 헤더부분 */
+.header {
+    width: 100vw;
+    height: 500px;
+    background-color: #4A8CD6;
+    position: relative;   
+    display: flex;
+}
+
+.header__text {
+    width: 300px;      
+    color: #eeeeee;      
+    top: 100px;
+    left: 200px;
+    position: absolute;
+}
+
+.header__text p {
+    font-size: 13px;
+    opacity: .7;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.button {
+    color: #eeeeee;
+    background-color: rgb(73, 73, 73);
+    padding: 8px;
+    border-radius: 6px;
+    transition: .5s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgb(92, 92, 92);
+    color: #4A8CD6;
+}
+
+.header img {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 400px;         
+    transition: 1s ease-in-out;
+}
+
+.header img:hover {
+    transform: scaleX(1.1);
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        height: 700px;     
+        text-align: center;   
+    }
+
+    .header__text {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header img {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

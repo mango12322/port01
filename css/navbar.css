@@ -1,0 +1,103 @@
+/* navbar 부분 */
+.navbar {
+    display: flex;    
+    justify-content: space-between;
+    width: 100vw;
+    height: 70px;
+}
+
+.navbar h1 {
+    padding: 15px;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px;
+    margin-left: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    z-index: 1000;
+}
+
+.navbar ul li {
+    margin-right: 15px;
+    padding: 15px;    
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    transition: .4s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #4A92D9;
+}
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+}
+
+.navbar ul li:hover .dropdown__menu {
+    display: block;
+    z-index: 500;
+}
+
+.dropdown__menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown__menu ul li {
+    width: 130px;
+    padding: 10px;
+}
+
+.navbar__menu_icon {
+    position: absolute;
+    font-size: 40px;
+    right: 15px;
+    top: 15px;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .navbar__menu_icon {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;        
+        width: 100vw;
+    }
+    .navbar__menu_icon:hover {
+        opacity: .6;
+    }
+
+    .dropdown__menu {
+        top: 0;
+        left: 100%;
+    }
+    
+    .dropdown__menu ul{        
+        width: 120px;
+        display: flex;        
+    }
+}

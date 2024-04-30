@@ -1,0 +1,33 @@
+@import url(./navbar.css);
+@import url(./header.css);
+@import url(./section.css);
+
+/* 공용 부분 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+    scrollbar-width: none;
+}
+
+/* footer 부분 */
+.footer {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 130px;
+    margin-top: 20px;
+}
+
+.footer__icons i {    
+    background-color: #4E61C0;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    margin: 20px 15px;
+}
+
